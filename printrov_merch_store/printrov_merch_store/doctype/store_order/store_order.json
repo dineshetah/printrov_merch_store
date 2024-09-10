@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ORDER-{MM}-{YYYY}-{###}",
+ "creation": "2024-09-07 17:34:14.259433",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "product_details_section",
+  "product",
+  "column_break_rqxd",
+  "retail_price",
+  "customer_details_section",
+  "user",
+  "customer_name",
+  "column_break_iyam",
+  "phone_number",
+  "email",
+  "status",
+  "billing_details_section",
+  "address_line_1",
+  "address_line_2",
+  "address_line_3landmark",
+  "pincode",
+  "column_break_uhwu",
+  "country",
+  "state",
+  "city",
+  "section_break_pv9c",
+  "column_break_yxtv",
+  "column_break_glvl",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Details "
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Store Product"
+  },
+  {
+   "fieldname": "column_break_rqxd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "product.retail_price",
+   "fieldname": "retail_price",
+   "fieldtype": "Currency",
+   "label": "Retail Price "
+  },
+  {
+   "fieldname": "customer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Details"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_iyam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Phone Number",
+   "options": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pending\nPlaced\nDelivered"
+  },
+  {
+   "fieldname": "billing_details_section",
+   "fieldtype": "Section Break",
+   "label": "Billing Details"
+  },
+  {
+   "fieldname": "address_line_1",
+   "fieldtype": "Data",
+   "label": "Address Line 1"
+  },
+  {
+   "fieldname": "address_line_2",
+   "fieldtype": "Data",
+   "label": "Address Line 2"
+  },
+  {
+   "fieldname": "address_line_3landmark",
+   "fieldtype": "Data",
+   "label": "Address Line 3/Landmark"
+  },
+  {
+   "default": "india",
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode",
+   "options": "india"
+  },
+  {
+   "fieldname": "column_break_uhwu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "label": "Country",
+   "options": "INDIA\nUSA\nUK\nCANADA"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Data",
+   "label": "State",
+   "options": "BH\nUP\nMP\nUK\nMH\nDL\nOD\nKL"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "options": "NOIDA\nAGRA\nLUKHNOW\nKANPUR\nGHAZIABAD\nNAGAPUR\nBHUBANESHWAR\nGAYA\nOLD DELHI\nNEW DELHI"
+  },
+  {
+   "fieldname": "section_break_pv9c",
+   "fieldtype": "Section Break",
+   "label": "Shipping Details"
+  },
+  {
+   "fieldname": "column_break_yxtv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_glvl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Store Order",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-10 12:11:32.485186",
+ "modified_by": "Administrator",
+ "module": "Printrov Merch Store",
+ "name": "Store Order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
